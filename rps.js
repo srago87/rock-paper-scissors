@@ -38,4 +38,13 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-console.log(playRound("paper", getComputerChoice()));
+function game(){
+    for(let i=0; i<5; i++){
+        let userChoice = window.prompt("Enter either rock, paper, or scissors");
+        let computerChoice = getComputerChoice();
+        let msg = playRound(userChoice, computerChoice);
+        console.log(msg);
+    }
+}
+
+game();
